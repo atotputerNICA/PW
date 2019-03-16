@@ -1,0 +1,88 @@
+html, body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  /* overflow-x: hidden;
+  overflow-y: hidden; */
+}
+.background {
+
+  background-image: url("../../res/first-page.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+
+}
+
+/*  Grid View */
+
+/*
+ * This makes sure that the padding and
+ * border are included in the total width
+ * and height of the elements
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+/* clear flow  */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*
+ * All these columns should be floating to the left,
+ * and have a padding of 15px
+ *
+ */
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+/*
+ * responsive grid-view with 12 columns
+ * 100% / 12 columns = 8.33%
+ *
+ */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+.container3 {
+
+  /*  center vertically  based on background */
+  position: absolute;
+  top:0;
+	bottom:0;
+  margin:auto;
+
+  /*  alternative method */
+  /* top: 50%;
+  transform: translateY(-50%); */
+
+  background: white;
+  width: 100%;
+  height: 100px;
+  border: 1px black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+  /* shadow */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
+}
