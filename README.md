@@ -1,6 +1,14 @@
 # PW
 :sparkles: The Secret Garden - Flower Shop
 
+- [PW](#pw)
+    + [Prerequisites](#prerequisites)
+    + [Set up](#set-up)
+    + [Prepare the app](#prepare-the-app)
+    + [Deploy the app](#deploy-the-app)
+    + [Documentation](#documentation)
+    
+    <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 ### Prerequisites
 * [Heroku](https://signup.heroku.com/signup/dc) account and [installed locally](https://cli-assets.heroku.com/heroku-x64.exe).
 * [Php](http://php.net/) installed locally.
