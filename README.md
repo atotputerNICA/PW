@@ -7,6 +7,7 @@
     + [Prepare the app](#prepare-the-app)
     + [Deploy the app](#deploy-the-app)
     + [Documentation](#documentation)
+    + [To do List](#to-do-list)
     
     <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 ### Prerequisites
@@ -36,3 +37,15 @@
 
 ### Documentation
 * [Getting Started on Heroku with PHP](https://devcenter.heroku.com/articles/getting-started-with-php)
+* [Heroku Postgres](https://devcenter.heroku.com/articles/heroku-postgresql)
+
+
+### To do List
+- [x] Heroku deploy
+- [ ] Heroku database
+- [ ] Select Language page
+- [ ] Home page
+- [ ] Login/Sign Up Page
+- [ ] Subscribe Pop Up
+- [ ] Shopping cart page
+- [ ] Admin dashboard
