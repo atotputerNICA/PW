@@ -7,7 +7,7 @@ html, body{
 }
 .background {
 
-  background-image: url("../../res/first-page.jpg");
+  background-image: url("images/first-page.jpg");
   background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -85,4 +85,5 @@ html, body{
   filter: alpha(opacity=60); /* For IE8 and earlier */
   /* shadow */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
+
 }

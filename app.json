@@ -1,0 +1,6 @@
+{
+  "name": "The Secret Garden",
+  "description": "Flower shop website",
+  "repository": "https://git.heroku.com/thesecretgarden.git",
+  "addons": []
+}
