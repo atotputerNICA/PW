@@ -1,6 +1,18 @@
 # PW
 :sparkles: The Secret Garden - Flower Shop
 
+**To do List**
+- [x] Heroku deploy
+- [ ] Heroku database
+- [ ] Select Language page
+- [ ] Home page
+- [ ] Login/Sign Up Page
+- [ ] Subscribe Pop Up
+- [ ] Shopping cart page
+- [ ] Admin dashboard
+
+
+
 - [PW](#pw)
     + [Prerequisites](#prerequisites)
     + [Set up](#set-up)
@@ -36,3 +48,4 @@
 
 ### Documentation
 * [Getting Started on Heroku with PHP](https://devcenter.heroku.com/articles/getting-started-with-php)
+* [Heroku Postgres](https://devcenter.heroku.com/articles/heroku-postgresql)
