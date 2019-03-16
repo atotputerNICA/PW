@@ -87,3 +87,20 @@ html, body{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
 
 }
+
+
+/* style for nice select*/
+
+.nice-select {
+    border-radius: 0px;
+}
+
+.nice-select .list {
+    border-radius: 0px;
+    height: 200px;
+    overflow-y: auto;
+}
+.nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
+  color:red;
+  background: none;
+}

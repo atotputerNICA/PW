@@ -28,26 +28,31 @@
         <!-- End Select Country -->
 
         <!--  Select Language -->
-        <select name="select-language" id="select-language"></select>
+        <select name="select-language" id="select-language">
+
+          <option value="hide"> Language </option>
+          <option value="RO" >Română</option>
+          <option value="En">English</option>
+
+        </select>
         <!-- End Select Language -->
 
-        <!-- <script>
+        <script>
+          $(document).ready(function() {
+            $('select').niceSelect();
+            $(".list").niceScroll();
+            $('.xyz').on('click',function(){
 
-          var data = [{'RO':'Română'}, {'EN': 'English'}];
-
-          var $select = $('#select-language');
-
-          $.each(data, function(key, val){
-              $select.append($('<option />', { value: key, text: val}));
+              event();
+            });
           });
-        </script> -->
-
+        </script>
 
       </div>
-  </div>
-
     </div>
   </div>
+
+
 </body>
 
 
