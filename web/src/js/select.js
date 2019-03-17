@@ -1,18 +1,18 @@
 $(document).ready(function() {
-  let dropdown = $('#select-country');
+  $('#select-country').niceSelect();
+  $("#select-language").niceSelect();
+  $('#select-country').empty();
 
-  dropdown.empty();
-  dropdown.niceSelect();
-  dropdown.append('<option selected="true" disabled>Choose Country</option>');
-  dropdown.prop('selectedIndex', 0);
-
-  const path = '../js/countries.json';
+  $('#select-country').append('<option selected="true" disabled>Choose Country</option>');
+  // $('#select-country').prop('selectedIndex', 0);
 
   // Populate dropdown with list of provinces
-  $.getJSON(path, function (data) {
-    console.log(data);
-    $.each(data, function (key, entry) {
-      dropdown.append($('<option></option>').attr('value', entry.code).text(entry.name));
-    })
-  });
+  // console.log(countries);
+  countries.forEach(function (entry, key) {
+      console.log(key);
+      $('#select-country').append($('<option></option>').val(entry.code).text(entry.name));
+  })
+  // $('#select-country').change();
+  console.log( $('#select-country').html());
+
 });
