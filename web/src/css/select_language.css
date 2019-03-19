@@ -28,6 +28,11 @@
   width: 100%;
 
 }
+.row {
+  padding-left: 8.33%;
+  padding-right:  8.33%;
+
+}
 
 /*
  * responsive grid-view with 12 columns
@@ -38,7 +43,6 @@
    [class*="col-"] {
      float: left;
      padding: 20px;
-     width: 100%;
 
    }
   .col-1 {width: 8.33%;}
@@ -53,6 +57,12 @@
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
+
+  .row {
+    padding-left: 16.66%;
+    padding-right: 16.66%;
+
+  }
 }
 
 
@@ -108,11 +118,6 @@ html, body{
 
 }
 
-.row {
-  padding-left: 16.66%;
-  padding-right: 16.66%;
-
-}
 .select-country {
   width: 100%;
   top: 0;
