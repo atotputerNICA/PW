@@ -7,16 +7,23 @@
 <meta charset="utf-8"/>
 <!-- viewport -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- styles -->
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.2/chosen.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css'>
 <!-- CSS styles -->
 <link rel="stylesheet" href="../css/select_language.css">
-<link rel="stylesheet" href="../css/nice-select.css">
+<link rel="stylesheet" href="../css/custom-select.css">
 
 <!-- Js scripts -->
 <script src="../vendors/jquery-3.3.1.min.js"></script>
 <script src="../vendors/jquery.nice-select.js"></script>
 <script src="../vendors/jquery.nicescroll.js"></script>
-<script src="../js/select.js"></script>
-<script src="../js/countries.js"></script>
+
+
+
 
 <title>selectlanguage</title>
 
@@ -29,26 +36,42 @@
 
     <div class="container3">
 
-      <div class="scrollable">
+      <div class="row" id="row">
+
+        <div class="col-5">
+          <!--  Select Country -->
+          <div class="chosen-wrapper" data-js="custom-scroll">
+            <select class="chosen-select" id="select-country" data-placeholder="Select Country"></select>
+          </div>
+          <!-- End Select Country -->
+        </div>
 
 
-        <!--  Select Country -->
-        <select name="select-country" id="select-country"></select>
-        <!-- End Select Country -->
+        <div class="col-5">
+          <!-- Select Language -->
+          <div class="chosen-wrapper" data-js="custom-scroll">
+            <select class="chosen-select" id="select-language" data-placeholder="Language">
+              <option></option>
+              <option value="RO" >Română</option>
+              <option value="En">English</option>
+            </select>
+          </div>
+          <!-- End Select Language -->
+        </div>
 
-
-         <!-- Select Language -->
-        <select name="select-language" id="select-language">
-          <option selected="true" disabled> Language </option>
-          <option value="RO" >Română</option>
-          <option value="En">English</option>
-        </select>
-        <!-- End Select Language -->
-
+        <div class="col-2">
+          <!-- Enter button -->
+          <button class="enter-button" type="button">Enter</button>
+          <!-- End Enter button -->
+        </div>
 
       </div>
     </div>
   </div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.js'></script>
+  <script src="../js/countries.js"></script>
+  <script  src="../js/custom-select.js"></script>
 
 
 </body>
