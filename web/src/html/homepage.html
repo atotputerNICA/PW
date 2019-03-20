@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<!--  encoding -->
+<meta charset="utf-8"/>
+
+<!-- viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- styles fontawesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- CSS styles -->
+<link rel="stylesheet" href="../css/homepage.css">
+
+<!-- Js scripts -->
+<script src="../vendors/jquery-3.3.1.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<title>Home Page</title>
+
+</head>
+
+
+<body>
+
+  <!-- Vertical Fixed Nav -->
+  <nav id="cd-vertical-nav">
+   <ul>
+     <li>
+       <a href="#section1" data-number="1">
+         <span class="cd-dot"></span>
+         <span class="cd-label">Home</span>
+       </a>
+     </li>
+     <li>
+       <a href="#section2" data-number="2">
+         <span class="cd-dot"></span>
+         <span class="cd-label">Shop</span>
+       </a>
+     </li>
+     <li>
+       <a href="#section3" data-number="3">
+         <span class="cd-dot"></span>
+         <span class="cd-label">About</span>
+       </a>
+     </li>
+     <li>
+       <a href="#section4" data-number="4">
+         <span class="cd-dot"></span>
+         <span class="cd-label">Contact</span>
+       </a>
+     </li>
+   </ul>
+ </nav>
+ <a class="cd-nav-trigger cd-img-replace">Open navigation<span></span></a>
+<!-- End of Vertical Fixed Nav -->
+
+  <!-- Navigation  -->
+  <div class="topnav" id="myTopnav">
+    <a href="#home" class="active">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <!-- End of Navigation  -->
+
+
+  <!-- Responsive navigation -->
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+  <!-- Responsive navigation -->
+
+
+  <section id="section1" class="cd-section">
+    <!-- parallax sevtion -->
+    <div class="parallax1"></div>
+    <!-- end of parallax sevtion -->
+		<a href="#section2" class="cd-scroll-down cd-img-replace">scroll down</a>
+	</section><!-- cd-section -->
+
+	<section id="section2" class="cd-section">
+		<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;</p>
+	</section><!-- cd-section -->
+
+	<section id="section3" class="cd-section">
+		<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;</p>
+	</section><!-- cd-section -->
+
+	<section id="section4" class="cd-section">
+		<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;</p>
+	</section><!-- cd-section -->
+
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script  src="../js/navbar.js"></script>
+
+</body>
+
+
+</html>
