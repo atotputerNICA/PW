@@ -76,9 +76,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
 /* --------------------------------
 
-Primary style
+          Primary Style
 
 -------------------------------- */
 html * {
@@ -127,7 +129,8 @@ Modules - reusable parts of our design
 
 /* --------------------------------
 
-Main components
+  Main components
+  Style For Fixed Navigation Bar
 
 -------------------------------- */
 .cd-section {
@@ -196,7 +199,6 @@ Main components
   bottom: 20px;
   width: 38px;
   height: 44px;
-  /* background: url("../img/cd-arrow-bottom.svg") no-repeat center center; */
 }
 
 /* No Touch devices */
@@ -410,9 +412,9 @@ Main components
 .touch #cd-vertical-nav li:last-child a {
   border-bottom: none;
 }
-
+/* 
 @media only screen and (min-width: 768px) {
   .touch .cd-nav-trigger, .touch #cd-vertical-nav {
     bottom: 40px;
   }
-}
+} */
