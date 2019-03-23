@@ -3,6 +3,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+
+/* --------------------------------
+
+          Nav Menu
+
+-------------------------------- */
 .topnav {
   overflow: hidden;
   top:  0;
@@ -38,6 +44,11 @@ body {
   display: none;
 }
 
+/* --------------------------------
+
+Responsive Menu for mobile devices
+
+-------------------------------- */
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
@@ -63,13 +74,14 @@ body {
 
 
 /* parallax effect */
-.parallax1 {
-  /* The image used */
-  background-image: url("images/1.jpg");
+[class*="parallax"]{
 
   /* Set a specific height */
-  min-height: 500px;
-
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  top: 0;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -77,6 +89,23 @@ body {
   background-size: cover;
 }
 
+.parallax1 {
+  /* The image used */
+  background-image: url("images/1.jpg");
+
+}
+.parallax2 {
+  /* The image used */
+  background-image: url("images/5.jpg");
+
+}
+
+/*  on mobile */
+@media only screen and (max-width: 768px) {
+  .parallax1 .parallax2 {
+    height: 50%;
+  }
+}
 
 /* --------------------------------
 
@@ -138,18 +167,7 @@ Modules - reusable parts of our design
   position: relative;
   padding: 2em 0;
 }
-.cd-section:nth-of-type(odd) {
-  background-color: #3e3947;
-}
-.cd-section:nth-of-type(odd) p {
-  color: #898099;
-}
-.cd-section:nth-of-type(even) {
-  background-color: #745360;
-}
-.cd-section:nth-of-type(even) p {
-  color: #bda3ad;
-}
+
 .cd-section h1, .cd-section p {
   position: absolute;
   left: 50%;
@@ -252,7 +270,7 @@ Modules - reusable parts of our design
   opacity: 1;
 }
 .no-touch #cd-vertical-nav a.is-selected .cd-dot {
-  background-color: white;
+  background-color: black;
 }
 .no-touch #cd-vertical-nav .cd-dot {
   position: relative;
@@ -261,7 +279,7 @@ Modules - reusable parts of our design
   height: 12px;
   width: 12px;
   border-radius: 50%;
-  background-color: #d88683;
+  background-color: hsl(2, 38%, 48%);
   -webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
   -moz-transition: -moz-transform 0.2s, background-color 0.5s;
   transition: transform 0.2s, background-color 0.5s;
@@ -275,7 +293,7 @@ Modules - reusable parts of our design
   position: relative;
   margin-right: 10px;
   padding: .4em .5em;
-  color: white;
+  color: #775364;
   font-size: 14px;
   font-size: 0.875rem;
   -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
