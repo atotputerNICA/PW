@@ -269,17 +269,21 @@ Modules - reusable parts of our design
 .no-touch #cd-vertical-nav a:hover .cd-label {
   opacity: 1;
 }
+
+/* selected dot */
 .no-touch #cd-vertical-nav a.is-selected .cd-dot {
-  background-color: black;
+  background-color: #36262d;
 }
+
+/* dot */
 .no-touch #cd-vertical-nav .cd-dot {
   position: relative;
   /* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
   top: 8px;
-  height: 12px;
-  width: 12px;
+  height: 14px;
+  width: 14px;
   border-radius: 50%;
-  background-color: hsl(2, 38%, 48%);
+  background-color: #775364;
   -webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
   -moz-transition: -moz-transform 0.2s, background-color 0.5s;
   transition: transform 0.2s, background-color 0.5s;
@@ -289,13 +293,15 @@ Modules - reusable parts of our design
   -o-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
 }
+
+/* label */
 .no-touch #cd-vertical-nav .cd-label {
   position: relative;
   margin-right: 10px;
   padding: .4em .5em;
-  color: #775364;
-  font-size: 14px;
-  font-size: 0.875rem;
+  color: #36262d;
+  font-size: 16px;
+  font-size: 1rem;
   -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
   -moz-transition: -moz-transform 0.2s, opacity 0.2s;
   transition: transform 0.2s, opacity 0.2s;
