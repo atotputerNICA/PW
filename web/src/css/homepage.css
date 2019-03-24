@@ -1,3 +1,8 @@
+@font-face {
+  font-family:"TheWoodlands-Regular";
+  src: url("../../res/fonts/TheWoodlands/TheWoodlands-Regular.otf") format("opentype");
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -100,10 +105,10 @@ Responsive Menu for mobile devices
 
 }
 
-/*  on mobile */
-@media only screen and (max-width: 768px) {
-  .parallax1 .parallax2 {
-    height: 50%;
+/*  on pc screens */
+@media only screen and (min-width: 768px) {
+  [class*="parallax"] {
+    height: 100%;
   }
 }
 
@@ -115,6 +120,7 @@ Responsive Menu for mobile devices
 html * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 *, *:after, *:before {
@@ -166,43 +172,6 @@ Modules - reusable parts of our design
   min-height: 100%;
   position: relative;
   padding: 2em 0;
-}
-
-.cd-section h1, .cd-section p {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  bottom: auto;
-  right: auto;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  width: 90%;
-  max-width: 768px;
-  text-align: center;
-}
-.cd-section h1 {
-  color: white;
-  font-weight: 300;
-  text-transform: uppercase;
-  font-size: 20px;
-  font-size: 1.25rem;
-}
-.cd-section p {
-  line-height: 1.6;
-}
-@media only screen and (min-width: 768px) {
-  .cd-section h1 {
-    font-size: 30px;
-    font-size: 1.875rem;
-  }
-  .cd-section p {
-    font-size: 20px;
-    font-size: 1.25rem;
-    line-height: 2;
-  }
 }
 
 .cd-scroll-down {
@@ -442,3 +411,156 @@ Modules - reusable parts of our design
     bottom: 40px;
   }
 }
+
+
+/********************************************
+ *         About us                         *
+ ********************************************/
+#section3 {
+  height: 100%;
+  /* padding: 0px; */
+}
+.about {
+  width: 100%;
+  height: max-content;
+  position: relative;
+  padding: 0px;
+
+}
+.container-p {
+  height: 100%;
+  position: absolute;
+  width: 65%;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  height: max-content;
+  left: 0;
+  right: 0;
+  margin:auto;
+
+}
+
+.about h1 {
+  position: relative;
+  text-align: center;
+  color: black;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 1.6;
+  padding-top: 40px;
+  /* font-family: 'Mrs Saint Delafield', cursive; */
+
+}
+.container-p p {
+
+  /* top:0;
+  bottom: 0; */
+
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+}
+
+.icons-about {
+  width: 30%;
+  display: inline-block;
+}
+
+.motto {
+  font-family:"TheWoodlands-Regular";
+  font-size: 40px;
+  padding: 40px;
+}
+@media only screen and (min-width: 768px) {
+  .about h1 {
+    font-size: 40px;
+  }
+  .container-p p {
+    font-size: 20px;
+    line-height: 2;
+  }
+  .motto {
+    font-size: 80px;
+  }
+}
+/********************************************
+ *         Contact us                       *
+ ********************************************/
+/* #section4 {
+   height: max-content;
+   padding: 0px;
+} */
+.row{
+  position: relative;
+  height: max-content;
+}
+
+.col{
+  height: max-content;
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  margin:auto;
+}
+
+
+
+/********************************************
+ *         Footer                           *
+ ********************************************/
+.footer {
+
+   /* position: fixed; */
+   /*
+    * this will make the footer appear always on
+    * the bottom of the page IDEA is this a good idea?
+    */
+
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #3e3947;
+   color: #898099;
+   text-align: center;
+   padding-bottom: 20px;
+   /* position: absolute;  */
+   /* this will center footer on the entire page (bad idea)*/
+
+}
+.icons-container {
+  top:  0;
+  bottom: 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+
+}
+
+.scroll-up {
+  /* scroll-behavior: smooth; */
+  padding-top: 25px;
+}
+/* Footer icons */
+.icons8-instagram {
+display: inline-block;
+width: 26px;
+height: 26px;
+background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMzIiIGhlaWdodD0iMzIiCnZpZXdCb3g9IjAgMCAxOTIgMTkyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE5MnYtMTkyaDE5MnYxOTJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iI2ZmZmZmZiI+PHBhdGggZD0iTTY0LDI0Yy0yMi4wODgsMCAtNDAsMTcuOTEyIC00MCw0MHY2NGMwLDIyLjA4OCAxNy45MTIsNDAgNDAsNDBoNjRjMjIuMDg4LDAgNDAsLTE3LjkxMiA0MCwtNDB2LTY0YzAsLTIyLjA4OCAtMTcuOTEyLC00MCAtNDAsLTQwek0xNDQsNDBjNC40MTYsMCA4LDMuNTg0IDgsOGMwLDQuNDE2IC0zLjU4NCw4IC04LDhjLTQuNDE2LDAgLTgsLTMuNTg0IC04LC04YzAsLTQuNDE2IDMuNTg0LC04IDgsLTh6TTk2LDU2YzIyLjA4OCwwIDQwLDE3LjkxMiA0MCw0MGMwLDIyLjA4OCAtMTcuOTEyLDQwIC00MCw0MGMtMjIuMDg4LDAgLTQwLC0xNy45MTIgLTQwLC00MGMwLC0yMi4wODggMTcuOTEyLC00MCA0MCwtNDB6TTk2LDcyYy0xMy4yNTQ4MywwIC0yNCwxMC43NDUxNyAtMjQsMjRjMCwxMy4yNTQ4MyAxMC43NDUxNywyNCAyNCwyNGMxMy4yNTQ4MywwIDI0LC0xMC43NDUxNyAyNCwtMjRjMCwtMTMuMjU0ODMgLTEwLjc0NTE3LC0yNCAtMjQsLTI0eiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+') 50% 50% no-repeat;
+background-size: 100%; }
+
+
+.icons8-facebook {
+display: inline-block;
+width: 26px;
+height: 26px;
+background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMzAiIGhlaWdodD0iMzAiCnZpZXdCb3g9IjAgMCAxOTIgMTkyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE5MnYtMTkyaDE5MnYxOTJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iI2ZmZmZmZiI+PHBhdGggZD0iTTE1My42LDI1LjZoLTExNS4yYy03LjA3MiwwIC0xMi44LDUuNzI4IC0xMi44LDEyLjh2MTE1LjJjMCw3LjA3MiA1LjcyOCwxMi44IDEyLjgsMTIuOGg2NHYtNTcuNmgtMTkuMnYtMTkuMmgxOS4ydi0xMC4zMTA0YzAsLTE5LjUyIDkuNTEwNCwtMjguMDg5NiAyNS43MzQ0LC0yOC4wODk2YzcuNzY5NiwwIDExLjg3ODQsMC41NzYgMTMuODI0LDAuODM4NHYxOC4zNjE2aC0xMS4wNjU2Yy02Ljg4NjQsMCAtOS4yOTI4LDMuNjM1MiAtOS4yOTI4LDEwLjk5NTJ2OC4yMDQ4aDIwLjE4NTZsLTIuNzM5MiwxOS4yaC0xNy40NDY0djU3LjZoMzJjNy4wNzIsMCAxMi44LC01LjcyOCAxMi44LC0xMi44di0xMTUuMmMwLC03LjA3MiAtNS43MzQ0LC0xMi44IC0xMi44LC0xMi44eiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+') 50% 50% no-repeat;
+background-size: 100%; }
+
+.icons8-pinterest {
+display: inline-block;
+width: 26px;
+height: 26px;
+background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNTAiIGhlaWdodD0iNTAiCnZpZXdCb3g9IjAgMCAxOTIgMTkyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE5MnYtMTkyaDE5MnYxOTJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iI2ZmZmZmZiI+PHBhdGggZD0iTTk2LDcuNjhjLTQ4LjczMjMxLDAgLTg4LjMyLDM5LjU4NzY5IC04OC4zMiw4OC4zMmMwLDQ4LjczMjMxIDM5LjU4NzY5LDg4LjMyIDg4LjMyLDg4LjMyYzQ4LjczMjMxLDAgODguMzIsLTM5LjU4NzY5IDg4LjMyLC04OC4zMmMwLC00OC43MzIzMSAtMzkuNTg3NjksLTg4LjMyIC04OC4zMiwtODguMzJ6TTk2LDE1LjM2YzQ0LjU4MTcyLDAgODAuNjQsMzYuMDU4MjggODAuNjQsODAuNjRjMCw0NC41ODE3MiAtMzYuMDU4MjgsODAuNjQgLTgwLjY0LDgwLjY0Yy00NC41ODE3MiwwIC04MC42NCwtMzYuMDU4MjggLTgwLjY0LC04MC42NGMwLC00NC41ODE3MiAzNi4wNTgyOCwtODAuNjQgODAuNjQsLTgwLjY0ek05OC4xOSw0Mi4yNGMtMjkuMzU2OCwwIC00OC4yNywyMC44MTA2NCAtNDguMjcsNDAuODljMCwxOS41OTE2OCAxMC44NDQyMiwyNC4xOTAzOCAxMy4xMTc1LDI1LjUwNzVjMi4yNjk0NCwxLjMyODY0IDMuODgwNjIsMC4zOTQ4IDQuMzg3NSwtMS40MWwxLjM2NSwtNS40NzVjMCwwIDAuNjMzMTgsLTEuNDUzMiAtMC42MjI1LC0yLjk3Yy0xLjU0NzUyLC0xLjg2NjI0IC00Ljg5LC01LjI2NTMgLTQuODksLTEzLjczMjVjMCwtMTUuMDk4ODggMTEuOTIwOTgsLTMxLjU0NSAzMy41MzI1LC0zMS41NDVjMjEuMjEyMTYsMCAyOC40Nzc1LDEzLjgxMzMyIDI4LjQ3NzUsMjUuMjQ1YzAsMTQuMjE1NjggLTYuODEwNTQsMzUuNDY3NSAtMjEuMTg3NSwzNS40Njc1Yy04LjkyOCwwIC0xMS40OTc1LC02Ljg4ODQ4IC0xMS40OTc1LC0xMC4yNmMtMC4wNTc2LC0xLjE0MDQ4IDAuMjAzNjQsLTIuMjg5NzIgMC4zMTUsLTIuODM1YzAuMTExMzYsLTAuNTQxNDQgMy43NDE2NiwtMTIuMTAyMTggNC44OTc1LC0xNi4yMjI1YzIuNTk1ODQsLTkuMjM1MiAwLjM3NTI0LC0xNi45MiAtOC4xMTUsLTE2LjkyYy0xMS45NjkyOCwwIC0xNi4yNzgxMiwxNi44NDc0NiAtMTEuMDI1LDI3LjYyMjVsLTguNTQyNSwzNC45NzI1YzAsMCAtMS4xNzk2LDUuNzI1OCAtMS40MSw5LjEwNWMtMC4zNTMyOCw1LjE4Nzg0IDAuMzg0MDYsMTIuODYxMzYgMC42Mzc1LDE1LjE1YzAuMTg0MzIsMS42NTg4OCAwLjE4ODUyLDIuNDUyNzQgMC45NDUsMi42MDI1YzAuNzU2NDgsMC4xNDU5MiAyLjA0MTg2LC0xLjEzNCAzLjA4MjUsLTIuNjdjMS4zMDU2LC0xLjkzNTM2IDUuNzQ3NywtOC4yMDUyNCA3LjU1MjUsLTEyLjE5NWMxLjYwODk2LC0zLjU1OTY4IDEuODk1OTQsLTMuNjUxMDYgMy41NjI1LC05Ljk1MjVjMS42NjY1NiwtNi4zMDUyOCAzLjkxNSwtMTUuMTY1IDMuOTE1LC0xNS4xNjVjMCwwIDQuNjg3MDIsOC4yMDUgMTcuMzQ3NSw4LjIwNWMxOC4wMDU3NiwwIDM2LjMxNSwtMTUuNjc3OTQgMzYuMzE1LC00NC45OTI1YzAsLTIzLjc2MTkyIC0yMC41ODUwNCwtMzguNDIyNSAtNDMuODksLTM4LjQyMjV6Ij48L3BhdGg+PC9nPjwvZz48L3N2Zz4=') 50% 50% no-repeat;
+background-size: 100%; }

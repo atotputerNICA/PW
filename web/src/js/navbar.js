@@ -18,6 +18,12 @@ jQuery(document).ready(function($){
         smoothScroll($(this.hash));
     });
 
+		//smooth scroll to second section
+    $('.scroll-up').on('click', function(event){
+        event.preventDefault();
+        smoothScroll($(this.hash));
+    });
+
     //open-close navigation on touch devices
     $('.touch .cd-nav-trigger').on('click', function(){
     	$('.touch #cd-vertical-nav').toggleClass('open');
