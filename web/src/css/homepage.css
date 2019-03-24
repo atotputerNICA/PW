@@ -110,6 +110,7 @@ Responsive Menu for mobile devices
   [class*="parallax"] {
     height: 100%;
   }
+
 }
 
 /* --------------------------------
@@ -169,7 +170,7 @@ Modules - reusable parts of our design
 
 -------------------------------- */
 .cd-section {
-  min-height: 100%;
+  height: 100%;
   position: relative;
   padding: 2em 0;
 }
@@ -413,6 +414,15 @@ Modules - reusable parts of our design
 }
 
 
+@media only screen and (max-width: 768px) {
+
+  #section1 {
+    height: 40%;
+  }
+  #sectionx {
+    height: 40%;
+  }
+}
 /********************************************
  *         About us                         *
  ********************************************/
