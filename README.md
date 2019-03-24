@@ -8,7 +8,7 @@
     + [Deploy the app](#deploy-the-app)
     + [Documentation](#documentation)
     + [To do List](#to-do-list)
-    
+
     <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 ### Prerequisites
 * [Heroku](https://signup.heroku.com/signup/dc) account and [installed locally](https://cli-assets.heroku.com/heroku-x64.exe).
@@ -43,8 +43,8 @@
 ### To do List
 - [x] Heroku deploy
 - [ ] Heroku database
-- [ ] Select Language page
-- [ ] Home page
+- [x] Select Language page
+- [x] Home page
 - [ ] Login/Sign Up Page
 - [ ] Subscribe Pop Up
 - [ ] Shopping cart page

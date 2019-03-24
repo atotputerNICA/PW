@@ -1,0 +1,17 @@
+Tema - Florarie
+
+HTML
+  * Paginile html se gasesc in directorul web/src/html/
+  * Prima pagina este select_language
+
+CSS * web/src/css/
+
+Am folosit si javascript * web/src/js/
+
+
+Pagina product-list.html trebuie integrata in sectiunea shop din pagina
+homepage.
+
+Nu am realizat design-ul pentru urmatoarele pagini:
+  * admin Page
+  * shopping cart
